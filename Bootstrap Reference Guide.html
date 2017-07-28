@@ -1,0 +1,757 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bootstrap Reference Guide</title>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <link href="https://fonts.googleapis.com/css?family=Anton|Baloo+Thambi|Crete+Round" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        </link>
+        <link rel="stylesheet" type="text/css" href="Bootstrap Reference Guide.css">
+        </link>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="Bootstrap Reference Guide.js"></script>
+        </script>
+    </head>
+    <body onload="">
+        <div id="contain_all">
+            <div id="top">
+                <nav class="navbar-inverse navbar-default navbar-fixed-top">
+                    <div class="container-fluid">
+                        <ul class="nav navbar-nav">
+                            <div id="nav12" class="navbar-items">
+                                <p class="navtext">Dropdowns
+                                </p>
+                            </div>
+                            <div id="nav11" class="navbar-items">
+                                <p class="navtext">Alerts
+                                </p>
+                            </div>
+                            <div id="nav10" class="navbar-items">
+                                <p class="navtext">Labels
+                                </p>
+                            </div>
+                            <div id="nav9" class="navbar-items">
+                                <p class="navtext">Badges
+                                </p>
+                            </div>
+                            <div id="nav7" class="navbar-items">
+                                <p class="navtext">Jumbotrons
+                                </p>
+                            </div>
+                            <div id="nav5" class="navbar-items">
+                                <p class="navtext">Gylphicons
+                                </p>
+                            </div>
+                            <div id="nav4" class="navbar-items">
+                                <p class="navtext">Collapses
+                                </p>
+                            </div>
+                            <div id="nav3" class="navbar-items">
+                                <p class="navtext">Carousels
+                                </p>
+                            </div>
+                            <div id="nav2" class="navbar-items">
+                                <p class="navtext">Modals
+                                </p>
+                            </div>
+                            <div id="nav1" class="navbar-items">
+                                <p class="navtext">Transitions
+                                </p>
+                            </div>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div id="bottom">
+                <div id="page12" class="page">
+                    <br style="line-height: 5vh;" />
+                    <h1>Dropdowns</h1>
+                    <div class="table" style="width: 100vw; height: 20vh;">
+                        <div class="row" style="width: 100vw;">
+                            <div class="cell" style="width: 100vw;float:left; display: inline-block";">
+                                <div class="btn-group">
+                                    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                    Click Here! <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">First</a></li>
+                                        <li><a href="#">Second</a></li>
+                                        <li><a href="#">Third</a></li>
+                                    </ul>
+                                </div>
+                                <div id="dropdown_code" class="modal fade" role="dialog">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;
+                                                </button>
+                                                <h4 class="modal-title">Dropdown Code
+                                                </h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <pre>
+<code>
+&lt;div class=&quot;btn-group&quot;&gt; <span>This is the class used to wrap Bootstrap buttons.</span>
+    &lt;button class=&quot;btn btn-default dropdown-toggle&quot;  data-toggle=&quot;dropdown&quot;&gt; <span>"btn" and "btn-default" are the classes that give Bootstrap buttons their unique look. "dropdown-toggle" is special though, we need to always use this when using Bootstrap dropdowns. "data-toggle" hooks an element to another element, in this case we set it equal to "dropdown," because we are making dropdown menus.</span>
+    Click Here! &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
+    &lt;/button&gt; <span>Span is used to group in-line elements. In this case the in-line elements exist inside the button, and they should all be on the same line. Setting "class" to caret when using Bootstrap gives us the little triangle.</span>
+    &lt;ul class=&quot;dropdown-menu&quot;&gt; <span>We are making a list, and giving it "dropdown-menu" as a class, it will store the options for the menu." Setting the class to this tells Bootstrap to treat this element a certain way and give it a certain look.</span>
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;First&lt;/a&gt;&lt;/li&gt; <span>All &lt;li&gt; does is define a list item. &lt;a&gt; defines an hyper link, and the location is set by giving href a value. </span>
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Second&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Third&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+</code>    
+</pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br style="line-height: 10vh;" />
+                                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#dropdown_code" style="width: 20vw;height: 5vh;max-width: 25vw;max-height: 7.5vh;">Display Code
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table" style="width: 100vw;">
+                        <div class="row" style="width: 100vw;">
+                            <div class="cell" style="width: 33vw;float:left; display: inline-block";">
+                                <h2>Dropdown Divider</h2>
+                                <div class="btn-group">
+                                    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                    Click Here! <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">First</a></li>
+                                        <li><a href="#">Second</a></li>
+                                        <li><a href="#">Third</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#">Fourth</a></li>
+                                    </ul>
+                                </div>
+                                <br style="line-height: 8vh;" />
+                                <pre>
+<code>
+    &lt;li role=&quot;separator&quot; class=&quot;divider&quot;&gt;
+    &lt;/li&gt;
+    <span>This creates a separator between
+    list items.</span>
+</code>
+</pre>
+                            </div>
+                            <div class="cell" style="width: 33vw;float:left; display: inline-block";">
+                                <h2>Dropdown Header</h2>
+                                <div class="btn-group">
+                                    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                    Click Here! <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li class="dropdown-header">Order</li>
+                                        <li><a href="#">First</a></li>
+                                        <li><a href="#">Second</a></li>
+                                        <li><a href="#">Third</a></li>
+                                    </ul>
+                                </div>
+                                <br style="line-height: 8vh;" />
+                                <pre>
+<code>
+    &lt;li class=&quot;dropdown-header&quot;&gt;Order
+    &lt;/li&gt;
+    <span>This creates a header before list
+    items, it can be used anywhere 
+    within the list.</span>
+</code>
+</pre>
+                            </div>
+                            <div class="cell" style="width: 33vw;float:left; display: inline-block";">
+                                <h2>Dropup</h2>
+                                <div class="btn-group dropup">
+                                    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                    Click Here! <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">First</a></li>
+                                        <li><a href="#">Second</a></li>
+                                        <li><a href="#">Third</a></li>
+                                    </ul>
+                                </div>
+                                <br style="line-height: 8vh;" />
+                                <pre>
+<code>
+    &lt;div class=&quot;dropup&quot;&gt;
+    &lt;/div&gt;
+    <span>This creates a dropdown list,
+    that drops upwards. Set the div's 
+    class to "dropup" instead of
+    "dropdown".</span>
+</code>
+</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="page11" class="page">
+                    <br style="line-height: 5vh;" />
+                    <h1>Alerts</h1>
+                    <div id="alert_code" class="modal fade" role="dialog">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;
+                                    </button>
+                                    <h4 class="modal-title">Alert Code
+                                    </h4>
+                                </div>
+                                <div class="modal-body">
+                                    <pre>
+<code>
+&lt;div class=&quot;alert alert-success&quot; role=&quot;alert&quot;&gt; <span>Alerts are just divs with their classes set to &quot;alert&quot;, text is placed within these divs. There are three types of alerts other than &quot;alert-sucess&quot;, for example &quot;alert-info&quot;.</span>
+    You can use &lt;strong>alert-sucess&lt;/strong&gt;to show a sucessful action done by the user.
+&lt;/div&gt;
+</code>    
+</pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="alert alert-success" role="alert">
+                        You can use <strong>alert-sucess</strong> to show a sucessful action done by the user.
+                    </div>
+                    <div class="alert alert-warning" role="alert">
+                        You'll definitely want to use <strong>alert-warning</strong> to signal something that can potentially go bad.
+                    </div>
+                    <div class="alert alert-danger" role="alert">
+                        You can use <strong>alert-danger</strong> to signal something hazardous to the user.
+                    </div>
+                    <br />
+                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#alert_code" style="width: 20vw;height: 5vh;max-width: 25vw;max-height: 7.5vh;">Display Code
+                    </button>
+                    <h2 style="padding-top: 2vh;">Alert Links</h2>
+                    <pre>
+<code>
+&lt;a href=&quot;#&quot; class=&quot;alert-link&quot;&gt;This is an &quot;alert-link&quot;.&lt;/a&gt;
+</code>    
+</pre>
+                    <div class="alert alert-info" role="alert">
+                        When wanting to use a link within an alert, give the <strong>a</strong> tag the <strong>"alert-link"</strong> class, so you'll get something like <a href="#" class="alert-link">this</a>.
+                    </div>
+                    <h2 style="padding-top: 2vh;" onclick="new_alert();">Dismissible Alerts</h2>
+                    <pre>
+<code>
+&lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;alert&quot;&gt;
+</code>    
+</pre>
+                    <div class="alert alert-success alert-dismissible fade in" role="alert">
+                        <button type="button" class="close" data-dismiss="alert">
+                        <span>&times;</span>
+                        </button>
+                        Alerts can be dismissed by adding a button with <strong>"close"</strong> as a class, and with data-dismiss set to <strong>"alert"</strong>.
+                    </div>
+                </div>
+                <div id="page10" class="page">
+                    <br style="line-height: 5vh;" />
+                    <h1>Labels</h1>
+                    <span class="label label-default">Default</span>
+                    <span class="label label-primary">Primary</span>
+                    <span class="label label-success">Success</span>
+                    <span class="label label-info">Info</span>
+                    <span class="label label-warning">Warning</span>
+                    <span class="label label-danger">Danger</span>
+                    <br style="line-height: 6vh;" />
+                    <pre style="padding-bottom: 2vh;">
+<code>
+&lt;span class = &quot;label label-default&quot;&gt;Default&lt;/span&gt;
+&lt;span class = &quot;label label-primary&quot;&gt;Primary&lt;/span&gt;
+&lt;span class = &quot;label label-success&quot;&gt;Success&lt;/span&gt;
+&lt;span class = &quot;label label-info&quot;&gt;Info&lt;/span&gt;
+&lt;span class = &quot;label label-warning&quot;&gt;Warning&lt;/span&gt;
+&lt;span class = &quot;label label-danger&quot;&gt;Danger&lt;/span&gt;
+<span>
+Giving a span element "label" as a class creates a Bootstrap label. These labels are useful for <a href="http://www.tutorialspoint.com/bootstrap/bootstrap_labels.htm">"offering counts, tips, or other markup for pages"</a>.
+</span>
+</code>
+</pre>
+                    <br style="line-height: 3vh;" />
+                    <span style="font-size: 3vh; color: black; background-color: white;" class="label label-default">Default Label</span>
+                    <div style="padding-top: 3vh;">
+                        <pre>
+<code>
+&lt;span  style=&quot;font-size: 5vh; color: black; background-color: white;&quot; class = &quot;label label-default&quot;&gt;Default Label&lt;/span&gt;
+<span>
+To change a label's size, give the &lt;span&gt; element a "font-size" attribute in CSS. To change the color of the text, change the "color" attribute in CSS. To change actual color of the label, change the "background-attribute" in CSS.
+</span>
+</code>
+</pre>
+                    </div>
+                </div>
+                <div id="page9" class="page">
+                    <br style="line-height: 5vh;" />
+                    <h1>Badges</h1>
+                    <br style="line-height: 5vh;" />
+                    <a href = "#" style="font-family: 'Crete Round', serif; font-size: 1.5em;">Notifications <span style="background-color: blue;" class = "badge">9</span></a>
+                    <div style="padding-top: 2vh;">
+                    <pre>
+<code>
+&lt;a href = &quot;#&quot; style=&quot;font-size: 1.5em;&quot;&gt;Notifications &lt;span style=&quot;background-color: blue;&quot; class = &quot;badge&quot;&gt;9&lt;/span&gt;&lt;/a&gt;
+<span>
+Badges are &lt;span&gt; elements with "badge" as a class. Badges are mainly used to <a href="https://www.tutorialspoint.com/bootstrap/bootstrap_badges.htm">"highlight new or unread items"</a>. They are typically placed between &lt;a&gt; tags, so they can be clicked and take users to another page. You can change the size and color of a badge, just like a label.
+</span>
+</code>    
+</pre>
+                </div>
+                </div>
+                <div id="page7" class="page">
+                    <br style="line-height: 5vh;" />
+                    <h1>Jumbotrons</h1>
+                    <div id="jumbotron_code" class="modal fade" role="dialog">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Jumbotron Code</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <pre>
+<code>
+&lt;div id=&quot;jumbotron_outer&quot; style=&quot;width: 50vw;&quot;&gt; <span>We'll use a div to contain our jumbotron, jumbotrons use the full width of their parent divs.</span>
+    &lt;div class=&quot;jumbotron&quot;&gt; <span>Creating a jumbotron is simple, just give a div the "jumbotron" class.</span>
+        &lt;h1&gt;How's it going?&lt;/h1&gt;
+        &lt;p&gt;
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at tempus urna, id facilisis lectus. Aenean faucibus velit tortor, vitae consequat quam efficitur vitae. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi facilisis risus et quam varius laoreet. Suspendisse tristique fringilla justo, ac aliquet dolor facilisis vitae.
+        &lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code>    
+</pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="jumbotron_outer" style="width: 50vw;">
+                        <div class="jumbotron">
+                            <h3 style="font-size: 3em;">How's it going?</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at tempus urna, id facilisis lectus. Aenean faucibus velit tortor, vitae consequat quam efficitur vitae. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi facilisis risus et quam varius laoreet. Suspendisse tristique fringilla justo, ac aliquet dolor facilisis vitae.
+                            </p>
+                        </div>
+                    </div>
+                    <br style="line-height: 0vh;" />
+                    <button type="button" class="btn btn-default" type="button" data-toggle="modal" data-target="#jumbotron_code" style="width: 20vw;height: 5vh;max-width: 25vw;max-height: 7.5vh;">Display Code</button>
+                </div>
+                <div id="page5" class="page">
+    <br style="line-height: 5vh;" />
+    <h1>Glyphicons</h1>
+    <br style="line-height: 5vh;" />
+    <span class="glyphicon glyphicon-apple"></span>
+    <br style="line-height: 5vh;" />
+    <pre>
+<code>
+    &lt;span class=&quot;glyphicon glyphicon-apple&quot;&gt;&lt;/span&gt;  
+    <span>This creates an apple icon. An apple isn't the only glyphicon though, there are over 250. All you have to do is create a span element, give it "glyphicon" as a class, and give it another class depending on the icon you want. Bootstrap glyphicons should only be used between &lt;span&gt; tags, and the span should have no text or child elements. A complete list of glyphicons can be found <a href="http://www.w3schools.com/bootstrap/bootstrap_ref_comp_glyphs.asp">here</a>.</span>
+</code>
+</pre>
+    <br />
+    <span style="font-size: 50px;" class="glyphicon glyphicon-apple"></span>
+    <br style="line-height: 5vh;" />
+    <pre>
+<code>
+    &lt;span style=&quot;font-size: 50px;&quot; class=&quot;glyphicon glyphicon-apple&quot;&gt;&lt;/span&gt;  
+    <span>To change the size of a glyphicon, give the &lt;span&gt; element a "font-size" attribute in CSS. In this case, we gave it a height of 50 pixels.</span>
+</code>
+</pre>
+    <br />
+    <span style="color: black;" class="glyphicon glyphicon-apple"></span>
+    <br style="line-height: 5vh;" />
+    <pre>
+<code>
+    &lt;span style=&quot;color: black;&quot; class=&quot;glyphicon glyphicon-apple&quot;&gt;&lt;/span&gt;  
+    <span>You can change the color of a glyphicon too! All you have to do is give the &lt;span&gt; element a "color" attribute in CSS.</span>
+</code>
+</pre>
+                </div>
+                <div id="page4" class="page">
+                    <br style="line-height: 5vh;" />
+                    <h1>Collapses</h1>
+                    <br style="line-height: 10vh;" />
+                    <div class="table">
+                        <div class="row">
+                            <div class="cell" style="width: 49vw; float: left;">
+                                <button type="button" class="btn btn-default" data-toggle="collapse" data-target="#collapse1">
+                                Single Collapse
+                                </button>
+                                <div class="collapse" id="collapse1" style="background-color: white;">
+                                    Lorem-ipsum.
+                                </div>
+                                <pre>
+<code>
+&lt;button data-toggle=&quot;collapse&quot; data-target=&quot;#collapse1&quot;&gt; <span>In this case "data-toggle" is set to collapse, and "data-target" to the id of our collapsible div.</span>
+Single Collapse
+&lt;/button&gt;
+&lt;div class=&quot;collapse&quot; id=&quot;collapse1&quot;&gt; <span>This is our collapsible div, notice how we set it's class to "collapse".</span>
+    Lorem-ipsum.
+&lt;/div&gt;
+</code>
+</pre>
+                            </div>
+                            <div class="cell" style="width: 49vw; float: right">
+                                <div class="panel-group">
+                                    <button type="button" class="btn btn-default" data-toggle="collapse" href="#collapse2">Panel Collapse</button>
+                                    <div id="collapse2" class="panel-collapse collapse">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">First</li>
+                                            <li class="list-group-item">Second</li>
+                                            <li class="list-group-item">Third</li>
+                                        </ul>
+                                        <div class="panel-footer">Footer</div>
+                                    </div>
+                                </div>
+                                <pre>
+<code>
+&lt;div class="panel-group"&gt; <span>The class is set to "panel-group".</span>
+        &lt;button data-toggle=&quot;collapse&quot; href=&quot;#collapse2&quot;&gt;Panel Collapse&lt;/button&gt; <span>"data-toggle" is still collapse, but this time there is no "data-target". Instead we are using "href", and setting it to the div containing the list of items to be collapsed.</span>
+        &lt;div id=&quot;collapse2&quot; class=&quot;panel-collapse collapse&quot;&gt; <span>Notice that the class is set to "panel-collapse" in addition to "collapse". The id of this div matches with the "href" of our button.</span>
+            &lt;ul class=&quot;list-group&quot;&gt; <span>Notice that class is set to "list-group".</span>
+                &lt;li class=&quot;list-group-item&quot;&gt;One&lt;/li&gt; <span>Notice that the class of our &lt;li&gt; element is "list-group-item".</span>
+                &lt;li class=&quot;list-group-item&quot;&gt;Two&lt;/li&gt;
+                &lt;li class=&quot;list-group-item&quot;&gt;Three&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;div class=&quot;panel-footer&quot;&gt;Footer<span>We can have footers here too! Set the class of a div, NOT contained in our list div, to "panel-footer".</span>
+            &lt;/div&gt;
+        &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="page3" class="page">
+                    <br style="line-height: 5vh;" />
+                    <h1>Carousels</h1>
+                    <br style="line-height: 5vh;" />
+                    <div id="carousel" class="carousel slide" data-ride="carousel" style="width: 60vw; margin: auto;">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel" data-slide-to="1"></li>
+                            <li data-target="#carousel" data-slide-to="2"></li>
+                            <li data-target="#carousel" data-slide-to="3"></li>
+                            <li data-target="#carousel" data-slide-to="4"></li>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img src="assets/stock-1.jpg" alt="" style="height: 26vw; width: 100%;">
+                                <div class="carousel-caption">
+                                    <p>SLIDE 1</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="assets/stock-2.jpg" alt="" style="height: 26vw; width: 100%;">
+                                <div class="carousel-caption">
+                                    <p>SLIDE 2</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="assets/stock-3.jpg" alt="" style="height: 26vw; width: 100%;">
+                                <div class="carousel-caption">
+                                    <p>SLIDE 3</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="assets/stock-4.jpg" alt="" style="height: 26vw; width: 100%;">
+                                <div class="carousel-caption">
+                                    <p>SLIDE 4</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="assets/stock-5.jpg" alt="" style="height: 26vw; width: 100%;">
+                                <div class="carousel-caption">
+                                    <p>SLIDE 5</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <div id="carousel_code" class="modal fade" role="dialog">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Collapse Code</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <pre>
+<code>
+&lt;div id=&quot;carousel&quot; class=&quot;carousel slide&quot; data-ride=&quot;carousel&quot; style=&quot;width: 60vw; margin: auto;&quot;&gt; <span>The class for this div is "carousel" and "slide", data-ride="carousel" tells the page to start animating the carousel as soon as the page is loaded.</span>
+&lt;ol class=&quot;carousel-indicators&quot;&gt; <span>This is an ordered list, unlike the previous unordered lists. We set the class to "carousel-indicators".</span>
+&lt;li data-target=&quot;#carousel&quot; data-slide-to=&quot;0&quot; class=&quot;active&quot;&gt;&lt;/li&gt; <span>These are the small circles at the bottom of a carousel, the active class is set to current slide being shown to the user. When this element is clicked, the targeted carousel is moved to the slide defined by "data-slide-to".</span>
+&lt;li data-target=&quot;#carousel&quot; data-slide-to=&quot;1&quot;&gt;&lt;/li&gt;
+&lt;li data-target=&quot;#carousel&quot; data-slide-to=&quot;2&quot;&gt;&lt;/li&gt;
+&lt;li data-target=&quot;#carousel&quot; data-slide-to=&quot;3&quot;&gt;&lt;/li&gt;
+&lt;li data-target=&quot;#carousel&quot; data-slide-to=&quot;4&quot;&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;carousel-inner&quot; role=&quot;listbox&quot;&gt; <span>The inner part of our carousel contains the images that the user sees. The class is set to "carousel-inner" and role is set to "listbox".</span>
+&lt;div class=&quot;item active&quot;&gt; <span>Class is set to "item" and because this is the slide that the user sees when the page is loaded it is also set to "active".</span>
+&lt;img src=&quot;assets/stock-1.jpg&quot; alt=&quot;&quot; style=&quot;height: 26vw; width: 100%;&quot;&gt; <span>We include the image that we want to use within this item div.</span>
+&lt;div class=&quot;carousel-caption&quot;&gt; <span>A div with class carousel-caption contains the words at the bottom of a carousel.</span>
+&lt;p&gt;SLIDE 1&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;item&quot;&gt;
+&lt;img src=&quot;assets/stock-2.jpg&quot; alt=&quot;&quot; style=&quot;height: 26vw; width: 100%;&quot;&gt;
+&lt;div class=&quot;carousel-caption&quot;&gt;
+&lt;p&gt;SLIDE 2&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;item&quot;&gt;
+&lt;img src=&quot;assets/stock-3.jpg&quot; alt=&quot;&quot; style=&quot;height: 26vw; width: 100%;&quot;&gt;
+&lt;div class=&quot;carousel-caption&quot;&gt;
+&lt;p&gt;SLIDE 3&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;item&quot;&gt;
+&lt;img src=&quot;assets/stock-4.jpg&quot; alt=&quot;&quot; style=&quot;height: 26vw; width: 100%;&quot;&gt;
+&lt;div class=&quot;carousel-caption&quot;&gt;
+&lt;p&gt;SLIDE 4&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;item&quot;&gt;
+&lt;img src=&quot;assets/stock-5.jpg&quot; alt=&quot;&quot; style=&quot;height: 26vw; width: 100%;&quot;&gt;
+&lt;div class=&quot;carousel-caption&quot;&gt;
+&lt;p&gt;SLIDE 5&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;a class=&quot;left carousel-control&quot; href=&quot;#carousel&quot; role=&quot;button&quot; data-slide=&quot;prev&quot;&gt; <span>This line and the following lines contain the controls for the carousel, the left and right arrows you see on the carousel.</span>
+&lt;span class=&quot;glyphicon glyphicon-chevron-left&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;sr-only&quot;&gt;Previous&lt;/span&gt;
+&lt;/a&gt;
+&lt;a class=&quot;right carousel-control&quot; href=&quot;#carousel&quot; role=&quot;button&quot; data-slide=&quot;next&quot;&gt;
+&lt;span class=&quot;glyphicon glyphicon-chevron-right&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;sr-only&quot;&gt;Next&lt;/span&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+</code>    
+</pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br style="line-height: 8vh;" />
+                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#carousel_code" style="width: 20vw;height: 5vh;max-width: 25vw;max-height: 7.5vh;">Display Code</button>
+                </div>
+                <div id="page2" class="page">
+                    <br style="line-height: 5vh;" />
+                    <h1>Modals</h1>
+                    <div id="modal_code" class="modal fade" role="dialog">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Modal Code</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <pre>                                                   
+<code>
+&lt;div id=&quot;modal_code&quot; class=&quot;modal fade&quot; role=&quot;dialog&quot;&gt; <span>Class is set to "modal" and "fade" and role is set to "dialog".</span>
+&lt;div class=&quot;modal-dialog modal-lg&quot;&gt; <span>Class is set to "modal-dialog" and "modal-lg", which is means our modal will be large in size.</span>
+&lt;div class=&quot;modal-content&quot;&gt; <div>This div, with class "modal-content", contains everything that the user will see.</div>
+&lt;div class=&quot;modal-header&quot;&gt; <div>The heading inside of modal. Class is set to "modal-header".</div>
+&lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot;&gt;&times;&lt;/button&gt; <div>This line creates the little x in the corner of the modal. "data-dismiss" is set to modal, and class to "close", so when the button is pressed the modal will be closed.</div>
+&lt;h4 class=&quot;modal-title&quot;&gt;Modal Code&lt;/h4&gt; <span>Class is set to "modal-title".</span>
+&lt;/div&gt;
+&lt;div class=&quot;modal-body&quot;&gt; <span>The body of our modal, class is set to "modal-body".</span>
+&lt;pre&gt;                                                   
+&lt;code&gt;
+
+&lt;/code&gt;    
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</code>    
+</pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br style="line-height: 8vh;" />
+                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modal_code" style="width: 20vw;height: 5vh;max-width: 25vw;max-height: 7.5vh;">Display Code</button>
+                </div>
+                <div id="page1" class="page">
+                    <br style="line-height: 5vh;" />
+                    <h1>Transitions</h1>
+                    <script type="text/javascript">
+                        function reset_div() {
+                            $("#transitions_top").removeClass();
+                        }
+                        function change_width() {
+                            $("#transitions_top").addClass("width_changed");
+                        }
+                        function change_border() {
+                            $("#transitions_top").addClass("border_changed");
+                        }
+                        function change_color() {
+                            $("#transitions_top").addClass("color_changed");
+                        }
+                        function change_opacity() {
+                            $("#transitions_top").addClass("opacity_changed");
+                        }
+                        function change_shadow() {
+                            $("#transitions_top").addClass("shadow_changed");
+                        }
+                    </script>
+                    <style type="text/css">
+                        #transitions_top {
+                        width: 34vh;
+                        height: 34vh;
+                        margin: auto;
+                        background-color: red; 
+                        border: 8px solid black;
+                        opacity: 100;
+                        margin-top: 8vh;
+                        transition: width 1.4s, border 1.4s, background-color 1.4s, opacity 1.4s, box-shadow 1.4s;
+                        }
+                        .width_changed {
+                        width: 68vh !important;
+                        }
+                        .border_changed {
+                        border: 16px solid white !important;
+                        }
+                        .color_changed {
+                        background-color: blue !important;
+                        }
+                        .opacity_changed {
+                        opacity: 0.25 !important;
+                        }
+                        .shadow_changed {
+                        box-shadow: 20px 20px 5px green !important;
+                        }
+                    </style>
+                    <div id="transitions_top" class="" onclick="reset_div();">
+                    </div>
+                    <div id="transitions_bottom">
+                        <br style="line-height: 4vh;" />
+                        <h2>Change</h2>
+                        <button onclick="change_width();">Width</button>
+                        <button onclick="change_border();">Border</button>
+                        <button onclick="change_color();">Color</button>
+                        <button onclick="change_opacity();">Opacity</button>
+                        <button onclick="change_shadow();">Shadow</button>
+                        <br style="line-height: 8vh;" />
+                        <h2 onclick="reset_div();">Reset</h2>
+                        <br style="line-height: 2vh;" />
+                        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#transition_code" style="width: 20vw;height: 5vh;max-width: 25vw;max-height: 7.5vh;">Display Code</button>
+                    </div>
+                    <div id="transition_code" class="modal fade" role="dialog">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Transition Code</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <pre>                                             
+<code>
+&lt;script type=&quot;text/javascript&quot;&gt;
+function reset_div() {
+    $(&quot;#transitions_top&quot;).removeClass(); <span>The $() function can also be written as jQuery(), it searches the HTML document for elements that match the parameter. The parameter in this case is an id, it can also be a class. When jQuery finds this parameter it will run the removeClass() function on the found object, and ALL classes will be removed, because the function reveived NO parameters. </span>
+}
+function change_width() {
+    $(&quot;#transitions_top&quot;).addClass(&quot;width_changed&quot;); <span>Instead of removeClass(), we'll use addClass() to add a class to the element that matches the parameter of the $() function. When the class is added, the transition propert will do all the work.</span>
+}
+function change_border() {
+    $(&quot;#transitions_top&quot;).addClass(&quot;border_changed&quot;);
+}
+function change_color() {
+    $(&quot;#transitions_top&quot;).addClass(&quot;color_changed&quot;);
+}
+function change_opacity() {
+    $(&quot;#transitions_top&quot;).addClass(&quot;opacity_changed&quot;);
+}
+function change_shadow() {
+    $(&quot;#transitions_top&quot;).addClass(&quot;shadow_changed&quot;);
+}
+&lt;/script&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+#transitions_top {
+    width: 34vh; <span>When "margin" is set to "auto", a div is horizontally centered. vh is a unit that web developers use, 1vh is equal to 1% of the available screen space.</span>
+    height: 34vh;
+    margin: auto;
+    background-color: red; 
+    border: 8px solid black;
+    opacity: 100;
+    margin-top: 8vh;
+    transition: width 1.4s, border 1.4s, background-color 1.4s, opacity 1.4s, box-shadow 1.4s; <span>Transition is the css property that makes everything happen, you give it another css property and the time it should take to change the property. When the property is changed, it smoothly transitions into the new from the old.</span>
+}
+.width_changed {
+    width: 68vh !important; <span>These are the changes that we'll make to the box. We'll apply these classes to the box using jquery, and the transition property will do all the work. !important is used to make the browser override a previous CSS rule. So, the browser will override the property that existed before we applied the class, and smoothly transition into an updated property.</span>
+}
+.border_changed {
+    border: 16px solid white !important;
+}
+.color_changed {
+    background-color: blue !important;
+}
+.opacity_changed {
+    opacity: 0.25 !important;
+}
+.shadow_changed {
+    box-shadow: 20px 20px 5px green !important;
+}
+&lt;/style&gt;
+    &lt;div id=&quot;transitions_top&quot; class=&quot;&quot; onclick=&quot;reset_div();&quot;&gt; <span>If the box is clicked, reset_div() will be run, which will reset to it's original position and look.</span>
+    &lt;/div&gt;
+    &lt;div id=&quot;transitions_bottom&quot;&gt; <span>This div contains our controls.</span>
+        &lt;br style=&quot;line-height: 4vh;&quot; /&gt;
+        &lt;h2&gt;Change&lt;/h2&gt;
+        &lt;button onclick=&quot;change_width();&quot;&gt;Width&lt;/button&gt; <span>The "onclick" attribute runs the function contained between parentheses.</span>
+        &lt;button onclick=&quot;change_border();&quot;&gt;Border&lt;/button&gt;
+        &lt;button onclick=&quot;change_color();&quot;&gt;Color&lt;/button&gt;
+        &lt;button onclick=&quot;change_opacity();&quot;&gt;Opacity&lt;/button&gt;
+        &lt;button onclick=&quot;change_shadow();&quot;&gt;Shadow&lt;/button&gt;
+        &lt;br style=&quot;line-height: 8vh;&quot; /&gt;
+        &lt;h2 onclick=&quot;reset_div();&quot;&gt;Reset&lt;/h2&gt; <span>Like when you click on the box, reset_div() will be run.</span>
+    &lt;/div&gt;
+&lt;/div&gt;
+</code>    
+</pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="home" class="page">
+                    <img id="banner" src="assets/bootstrap-banner.png" data-toggle="modal" data-target="home_modal" />
+                    <div id="home_modal" class="modal fade" role="dialog">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title"></h4>
+                                </div>
+                                <div class="modal-body">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="nav0">
+                    <img id="icon" src="assets/bootstrap-icon.png" />
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
